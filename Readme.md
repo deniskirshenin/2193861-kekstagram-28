@@ -1,6 +1,6 @@
 # Kekstagram. Solution to HTML Academy project
 
-This is a solution to the [Kekstagram](https://htmlacademy.org/courses). HTML Academy challenges help you improve your coding skills by building realistic projects with code-review by personal mentor.
+This is a solution to the [Kekstagram](https://kekstagram-app.netlify.app/). HTML Academy challenges help you improve your coding skills by building realistic projects with code-review by personal mentor.
 
 ## Table of contents
 
@@ -11,12 +11,8 @@ This is a solution to the [Kekstagram](https://htmlacademy.org/courses). HTML Ac
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -41,9 +37,9 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Kekstagram](https://your-live-site-url.com)
+- Live Site URL: [Kekstagram](https://kekstagram-app.netlify.app/)
 
-### Process
+### My process
 
 - I started with organasing my code using modules. Main.js is my entry point, utils.js is used for utility functions, api.js to proceed data, and the rest is each module for each feature.
 - Then I connected data with thumbnail module to create list of thumbnail pics.
@@ -72,8 +68,6 @@ I learned how to organise code with ES-modules, closures, event listeners and DO
 - Website - [Add your name here](https://www.your-site.com)
 - LinkedIn - [@deniskirshenin](https://www.linkedin.com/in/deniskirshenin/)
 - UpWork - [Denis Kirshenin](https://www.upwork.com/freelancers/~011b1eea8c93a34c72)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
