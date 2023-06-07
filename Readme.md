@@ -1,51 +1,80 @@
-# Личный проект «Кекстаграм»
+# Kekstagram. Solution to HTML Academy project
 
-* Студент: [Денис Киршенин](https://up.htmlacademy.ru/javascript/28/user/2193861).
-* Наставник: `Михаил Кислый`.
+This is a solution to the [Kekstagram](https://htmlacademy.org/courses). HTML Academy challenges help you improve your coding skills by building realistic projects with code-review by personal mentor.
 
----
+## Table of contents
 
-_Не удаляйте и не изменяйте самовольно файлы и папки:_
-_`.editorconfig`, `.eslintrc`, `.gitattributes`, `.gitignore`, `package-lock.json`, `package.json`., `.github`_
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
----
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-[Как работать с Git на проекте](Contributing.md) | [Как работать над проектом](Workflow.md)
+## Overview
 
-### Памятка
+Kekstagram is an image viewing service. Users are given the opportunity to upload their own photos or view photos previously uploaded by other users.
 
-#### 1. Зарегистрируйтесь на Гитхабе
+### The challenge
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+Users should be able to:
 
-#### 2. Создайте форк
+- Upload a new image to the site and filling in information about it, change size of an image, apply filter on image, change filter intensity with slider
+- Submit data to server using POST method, when data is submitted succesfully image upload form resets to default, if unsuccesful
+- Receive an error message when the contact form is submitted if:
+  - The `Hashtag` is more than 5 hashtags, if hashtag is more than 20 symbols including "#"
+  - The `Comment` is more than 140 symbols
+- Images are loaded from server. On click on thumbnail big picture is opened. At one time only 5 comments are shown. Click on
+"Load more" show 5 more comments
+- Filter shown thumbnails on main page by click on "Default", "Random", "Discussed"
 
-Откройте репозиторий и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+### Screenshot
 
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/35275222-1d624452-0050-11e8-8aca-06d2832724ce.png">
+![](./screenshot.jpg)
 
-Получится вот так:
+### Links
 
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/35275223-1d7cf9fa-0050-11e8-829b-98ac3c9a4f8b.png">
+- Live Site URL: [Kekstagram](https://your-live-site-url.com)
 
-#### 3. Клонируйте репозиторий на свой компьютер
+### Process
 
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
+- I started with organasing my code using modules. Main.js is my entry point, utils.js is used for utility functions, api.js to proceed data, and the rest is each module for each feature.
+- Then I connected data with thumbnail module to create list of thumbnail pics.
+- After this I built function that render full post with big picture, comments and likes on click thumbnail.
+- Then I moved to upload image preview function. I added function to preview uploaded image. After I added NoUiSlider to change intensity of applied filter.
+- After uploading we need to submit our image to server. To validate submit form I used PristineJs. On successful submit form is reseted and on unsuccessful it remains in last state. I used FormData to collect data from form and send it to server.
+- Finally I added function to filter images when "Default", "Random" and "Discussed" are clicked. And optimized loading of images with debounce and throttling functions when changing filter.
 
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/35275224-1d97a7dc-0050-11e8-89f9-41c9a7b2ae9c.png">
+### Built with
 
-Клонировать репозиторий можно так:
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Vanilla JS
+- Fetch API
+- [NoUiSlider](https://refreshless.com/nouislider/) - lightweight JavaScript range slider with full touch support
+- [PristineJs](https://pristine.js.org/) - Vanilla javascript form validation micro-library
 
-```
-git clone SSH-адрес_вашего_форка
-```
+### What I learned
 
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
+I learned how to organise code with ES-modules, closures, event listeners and DOM, how to fetch API. As well I got strong fundamental knowledge of JS concepts used in web development.
 
-#### 4. Начинайте обучение!
+## Author
 
----
+- Website - [Add your name here](https://www.your-site.com)
+- LinkedIn - [@deniskirshenin](https://www.linkedin.com/in/deniskirshenin/)
+- UpWork - [Denis Kirshenin](https://www.upwork.com/freelancers/~011b1eea8c93a34c72)
 
-<a href="https://htmlacademy.ru/intensive/javascript"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/javascript/logo-for-github-2.png"></a>
+**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-Репозиторий создан для обучения на интенсивном онлайн‑курсе «[JavaScript. Профессиональная разработка веб-интерфейсов](https://htmlacademy.ru/intensive/javascript)» от [HTML Academy](https://htmlacademy.ru).
+## Acknowledgments
+
+Big thanks to HTML Academy for very well-structured learning curve and code-review.
